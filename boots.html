@@ -10,6 +10,11 @@
   <!--done linking-->
   
 </head>
+<style type="text/css">
+    .container.custom-container {
+      padding: 0 400px;
+    }
+</style>
 <body>
   <div class="container">  <!--formatting for this block is with the margins-->
     
@@ -58,10 +63,38 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
 </nav>
+<!--different headers-h1,h2,etc.-are different sizes-->
+<h1>My First Bootstrap Page</h1>
+<h2>My First Bootstrap Page</h2>
+<h3>My First Bootstrap Page</h3>
+<h4>My First Bootstrap Page</h4>
+<h5>My First Bootstrap Page</h5>
+</div>
+
+<div class="custom-container container"><!--want dif margins for form-->
+		    
+<!--here comes a login form-->
+<form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+</div><!--closing the custom container-->
+
+<div class="container"><!--reopening default container-->
 
 <!--let's make a pretty table -->
 <table class="table">
   <thead><!--table heading (a table is like a mini html but with t's preceding the tags -->
+    <!--Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.-->
     <tr>
       <th>Firstname</th>
         <th>Lastname</th>
@@ -93,8 +126,20 @@
 </table>
 <!--done with the table -->
 
-</div> <!-- /container -->
+<!--here are some random buttons that are different colors -ex.primary,warning-and different sizes -ex.lg,sm,md-->
+<p>
+	<button type="button" class="btn btn-xs btn-default">Default</button>
+	<button type="button" class="btn btn-sm btn-primary">Primary</button>
+	<button type="button" class="btn btn-md btn-success">Success</button>
+	<button type="button" class="btn btn-lg btn-info">Info</button>
+	<button type="button" class="btn btn-md btn-warning">Warning</button>
+	<button type="button" class="btn btn-sm btn-danger">Danger</button>
+	<!--this button's just a link!-->
+	<button type="button" class="btn btn-xs btn-link">Link</button>
+</p>
 
+
+</div> <!-- /container -->
 </body>
 </html>
 
