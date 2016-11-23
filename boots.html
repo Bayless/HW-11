@@ -2,39 +2,53 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
-  <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+  <!--link html to za bootstrap-->
+  <link rel="stylesheet" href="../../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="../../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!--done linking-->
+  
 </head>
 <body>
-  <div class="container">
+  <div class="container">  <!--formatting for this block is with the margins-->
     
-      <!-- Static navbar -->
+      <!-- here comes a nav bar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
+	    
+	    <!--set up the buttons that the nav bar will contain-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
+	      
+              <span class="sr-only">Toggle navigation</span><!--hide information intended only for screen readers-->
+	      
+	      <!--here come three buttons to be set up-->
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+	      
             </button>
+	    
+	    <!--title of the nav bar - to be displayed but not clicked-->
             <a class="navbar-brand" href="#">Project name</a>
-          </div>
+	    
+          </div><!--done with organizing the nav bar, now put stuff in it-->
+	  
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+            <ul class="nav navbar-nav"><!--it's a nav bar list!-->
+              <li class="active"><a href="#">Home</a></li><!--the default button is "active"-->
+              <li><a href="#">About</a></li><!--some other buttons-->
               <li><a href="#">Contact</a></li>
               
 	      <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a><!--special formatting for a dropdown component-->
+                <ul class="dropdown-menu"><!--the list that the dropdown contains-->
+                  <li><a href="#">Action</a></li><!--items in list are links-->
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
+                  <li role="separator" class="divider"></li><!--a separator-->
+                  <li class="dropdown-header">Nav header</li><!--not clickable -->
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -43,10 +57,43 @@
 </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
-      </nav>
+</nav>
 
-  
-    </div> <!-- /container -->
+<!--let's make a pretty table -->
+<table class="table">
+  <thead><!--table heading (a table is like a mini html but with t's preceding the tags -->
+    <tr>
+      <th>Firstname</th>
+        <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default</td>
+      <td>Defaultson</td>
+        <td>def@somemail.com</td>
+    </tr>
+    <tr class="success">
+      <td>Success</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr class="danger">
+      <td>Danger</td>
+      <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr class="info">
+      <td>Info</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+    </tr>
+  </tbody>
+</table>
+<!--done with the table -->
+
+</div> <!-- /container -->
 
 </body>
 </html>
